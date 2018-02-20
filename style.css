@@ -1,0 +1,73 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(20,20,20,1);
+  overflow-x: hidden;
+}
+
+body, ul, li, h1, h2, h3, a {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* ----- HEADER ----- */
+
+.main {
+  width: 84vw;
+  margin: 40px auto 0 auto;
+}
+
+h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.main-child {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.serie-wrapper {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 1vw;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: 0.1s all ease;
+}
+
+.serie-wrapper:hover, .serie-wrapper:focus {
+  transform: scale(1.05);
+  transition: 0.1s all ease;
+}
+
+.serie {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.1);
+  transition: 0.1s all ease;
+}
+
+.serie:hover, .serie:focus {
+  background-color: rgba(0,0,0,0.75);
+  transform: scale(1.01);
+  transition: 0.1s all ease;
+}
+
+.serie h3 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1vw 2vw;
+  background-color: rgba(20,20,20,1);
+}
