@@ -82,3 +82,34 @@ h2 {
   padding: 1vw 2vw;
   background-color: rgba(20,20,20,1);
 }
+
+@media (min-width: 1280px) {
+  .main {
+    width: 78vw;
+  }
+  .serie-wrapper {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 93vw;
+  }
+  .serie-wrapper {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 92vw;
+  }
+  .serie-wrapper {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
