@@ -154,18 +154,26 @@ $(function(){
 
 	$('#filter-all').on('click', function(){
 		$('#main-all').isotope({filter: '.serie-wrapper-main'});
+		$('.filter-focus').removeClass('filter-focus');
+		$('#filter-all').addClass('filter-focus');
 	})
 
 	$('#filter-srd').on('click', function(){
 		$('#main-all').isotope({filter: '.srd'});
+		$('.filter-focus').removeClass('filter-focus');
+		$('#filter-srd').addClass('filter-focus');
 	})
 
 	$('#filter-rd').on('click', function(){
 		$('#main-all').isotope({filter: '.rd'});
+		$('.filter-focus').removeClass('filter-focus');
+		$('#filter-rd').addClass('filter-focus');
 	})
 
 	$('#filter-nrd').on('click', function(){
 		$('#main-all').isotope({filter: '.nrd'});
+		$('.filter-focus').removeClass('filter-focus');
+		$('#filter-nrd').addClass('filter-focus');
 	})
 
 });

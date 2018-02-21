@@ -41,7 +41,12 @@ ul li {
   transition: 0.2s all ease;
 }
 
-ul li:hover, ul li:focus {
+.filter-focus {
+  background-color: #32746D;
+  transition: 0.2s all ease;
+}
+
+ul li:hover {
   background-color: #32746D;
   transition: 0.2s all ease;
 }
