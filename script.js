@@ -23,6 +23,7 @@ $(function(){
 		["Travelers", "images/travelers.jpg", "nrd", "????", "Season 3"],
 		["Altered Carbon", "images/alteredcarbon.jpg", "nrd", "????", "Season 2"],
 		["Sherlock", "images/sherlock.jpg", "nrd", "????", "Season 5"],
+		["La Casa De Papel", "images/lacasadepapel.jpg", "nrd", "????", "Season 2"],
 		["Glitch", "images/glitch.jpg", "nrd", "????", "Season 3"]
 	];
 
