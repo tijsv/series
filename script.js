@@ -63,36 +63,36 @@ $(function(){
 		document.getElementById(newSerie.id).appendChild(newSerieRD);
 	}
 
-	// Forloop die de elementen aanmaakt op de juiste plaats
-	for (var i = 0; i < series.length; i++) {
-		// Maak een serie-wrapper div aan
-		var newSerieWrapper = document.createElement('div');
-		newSerieWrapper.id = "serie-wrapper-" + i;
-		newSerieWrapper.style.background = 'url('+ series[i][1] +')';
-		newSerieWrapper.className = 'serie-wrapper';
-		// Maak een serie div aan
-		var newSerie = document.createElement('div');
-		newSerie.id = "serie-" + i;
-		newSerie.className = 'serie';
-		// Maak tekst aan die bij de serie hoort
-		var newSerieTitle = document.createElement('h3');
-		newSerieTitle.innerHTML = series[i][0];
-		var newSerieRD = document.createElement('h4');
-		newSerieRD.innerHTML = series[i][3];
-		// Voeg de elementen toe aan de juiste main div
-		if (series[i][2] == "srd") {
-			document.getElementById('main-srd').appendChild(newSerieWrapper);
-		} else if (series[i][2] == "rd") {
-			document.getElementById('main-rd').appendChild(newSerieWrapper);
-		} else if (series[i][2] == "nrd") {
-			document.getElementById('main-nrd').appendChild(newSerieWrapper);
-		} else {
-			continue;
-		}
-		document.getElementById(newSerieWrapper.id).appendChild(newSerie);
-		document.getElementById(newSerie.id).appendChild(newSerieTitle);
-		document.getElementById(newSerie.id).appendChild(newSerieRD);
-	}
+	// // Forloop die de elementen aanmaakt op de juiste plaats
+	// for (var i = 0; i < series.length; i++) {
+	// 	// Maak een serie-wrapper div aan
+	// 	var newSerieWrapper = document.createElement('div');
+	// 	newSerieWrapper.id = "serie-wrapper-" + i;
+	// 	newSerieWrapper.style.background = 'url('+ series[i][1] +')';
+	// 	newSerieWrapper.className = 'serie-wrapper';
+	// 	// Maak een serie div aan
+	// 	var newSerie = document.createElement('div');
+	// 	newSerie.id = "serie-" + i;
+	// 	newSerie.className = 'serie';
+	// 	// Maak tekst aan die bij de serie hoort
+	// 	var newSerieTitle = document.createElement('h3');
+	// 	newSerieTitle.innerHTML = series[i][0];
+	// 	var newSerieRD = document.createElement('h4');
+	// 	newSerieRD.innerHTML = series[i][3];
+	// 	// Voeg de elementen toe aan de juiste main div
+	// 	if (series[i][2] == "srd") {
+	// 		document.getElementById('main-srd').appendChild(newSerieWrapper);
+	// 	} else if (series[i][2] == "rd") {
+	// 		document.getElementById('main-rd').appendChild(newSerieWrapper);
+	// 	} else if (series[i][2] == "nrd") {
+	// 		document.getElementById('main-nrd').appendChild(newSerieWrapper);
+	// 	} else {
+	// 		continue;
+	// 	}
+	// 	document.getElementById(newSerieWrapper.id).appendChild(newSerie);
+	// 	document.getElementById(newSerie.id).appendChild(newSerieTitle);
+	// 	document.getElementById(newSerie.id).appendChild(newSerieRD);
+	// }
 
 	$('#main-all').isotope({ 
 		itemSelector: '.serie-wrapper-main',
