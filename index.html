@@ -5,10 +5,19 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,600,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Martel:900" rel="stylesheet">
-    <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+    <meta name="viewport" content="width=device-width maximum-scale=1 minimum-scale=1" />
   <body>
 
     <div id="main" class="main">
+      <h2>All Movies</h2>
+      <ul id="filter">
+        <li><a id="filter-all">All Movies</a></li>
+        <li><a id="filter-srd">Specific Release Dates</a></li>
+        <li><a id="filter-rd">Release Dates (Year)</a></li>
+        <li><a id="filter-nrd">No Release Dates</a></li>
+      </ul>
+      
+      <div id="main-all"></div>
       <h2>Specific Release Dates</h2>
       <div id="main-srd" class="main-child"></div>
       <h2>Release Dates (Year)</h2>
@@ -16,8 +25,6 @@
       <h2>No Release Dates</h2>
       <div id="main-nrd" class="main-child"></div>
     </div>
-
-
 
     <script src="jquery-3.1.1.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>

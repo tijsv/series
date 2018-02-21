@@ -18,7 +18,18 @@ body, ul, li, h1, h2, h3, h4, a {
 
 .main {
   width: 84vw;
-  margin: 40px auto 0 auto;
+  margin: 60px auto 0 auto;
+}
+
+ul {
+  margin-bottom: 40px;
+}
+
+ul li {
+  padding: 5px;
+  display: inline-block;
+  background-color: white;
+  cursor: pointer;
 }
 
 h2 {
@@ -32,6 +43,26 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+}
+
+#main-all {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#main-all:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.serie-wrapper-main {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .serie-wrapper {
@@ -87,7 +118,7 @@ h2 {
   .main {
     width: 78vw;
   }
-  .serie-wrapper {
+  .serie-wrapper, .serie-wrapper-main {
     width: 12vw;
     height: 12vw;
   }
@@ -97,7 +128,7 @@ h2 {
   .main {
     width: 93vw;
   }
-  .serie-wrapper {
+  .serie-wrapper, .serie-wrapper-main {
     width: 30vw;
     height: 30vw;
   }
@@ -105,9 +136,9 @@ h2 {
 
 @media (max-width: 480px) {
   .main {
-    width: 92vw;
+    width: 93vw;
   }
-  .serie-wrapper {
+  .serie-wrapper, .serie-wrapper-main {
     width: 45vw;
     height: 45vw;
   }
