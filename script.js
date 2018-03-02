@@ -116,6 +116,13 @@ $(function(){
 
 	}
 
+	for (var i = 0; i < 10000; i++) {
+		var vlakje = document.createElement('div');
+		vlakje.className = 'vlakken';
+		document.getElementById('vlak').appendChild(vlakje);
+	}
+	
+
 	// // Forloop die de elementen aanmaakt op de juiste plaats
 	// for (var i = 0; i < series.length; i++) {
 	// 	// Maak een serie-wrapper div aan
